@@ -85,29 +85,29 @@
 
 ## 4) Flutter Plugin Contract TODOs
 ### 4.1 Dart API Methods
-- [ ] Define `initializeRuntime()` request/response contract.
-- [ ] Define `listWorkspaces()` request/response contract.
-- [ ] Define `createWorkspace({name})` request/response contract.
-- [ ] Define `deleteWorkspace({workspaceId})` request/response contract.
-- [ ] Define `importIntoWorkspace({workspaceId, sourceUri, mode})` request/response contract.
-- [ ] Define `exportWorkspace({workspaceId, destinationUri})` request/response contract.
-- [ ] Define `startSession({workspaceId, sessionKind, executable, args, cwd, env})` request/response contract.
-- [ ] Define `writeSession({sessionId, bytes/base64})` request/response contract.
-- [ ] Define `stopSession({sessionId, signal})` request/response contract.
-- [ ] Define `subscribeSessionEvents({sessionId})` subscription/unsubscription contract.
+- [x] Define `initializeRuntime()` request/response contract.
+- [x] Define `listWorkspaces()` request/response contract.
+- [x] Define `createWorkspace({name})` request/response contract.
+- [x] Define `deleteWorkspace({workspaceId})` request/response contract.
+- [x] Define `importIntoWorkspace({workspaceId, sourceUri, mode})` request/response contract.
+- [x] Define `exportWorkspace({workspaceId, destinationUri})` request/response contract.
+- [x] Define `startSession({workspaceId, sessionKind, executable, args, cwd, env})` request/response contract.
+- [x] Define `writeSession({sessionId, bytes/base64})` request/response contract.
+- [x] Define `stopSession({sessionId, signal})` request/response contract.
+- [x] Define `subscribeSessionEvents({sessionId})` subscription/unsubscription contract.
 
 ### 4.2 Session Kinds
-- [ ] Define `shell` session semantics and constraints.
-- [ ] Define `lsp` session semantics and constraints.
-- [ ] Define `pty-terminal` optional session semantics and constraints.
+- [x] Define `shell` session semantics and constraints.
+- [x] Define `lsp` session semantics and constraints.
+- [x] Define `pty-terminal` optional session semantics and constraints.
 
 ### 4.3 Event Schema
-- [ ] Define `stdout` payload schema and chunk semantics.
-- [ ] Define `stderr` payload schema and chunk semantics.
-- [ ] Define `exit` payload schema (code/signal/source).
-- [ ] Define `state` payload schema (created/running/stopping/stopped/failed).
-- [ ] Define `error` payload schema (code, message, details).
-- [ ] Define `workspaceProgress` payload schema (phase, percent, message).
+- [x] Define `stdout` payload schema and chunk semantics.
+- [x] Define `stderr` payload schema and chunk semantics.
+- [x] Define `exit` payload schema (code/signal/source).
+- [x] Define `state` payload schema (created/running/stopping/stopped/failed).
+- [x] Define `error` payload schema (code, message, details).
+- [x] Define `workspaceProgress` payload schema (phase, percent, message).
 
 ### 4.4 Android Core Interfaces
 - [ ] Define `WorkspaceStore` responsibilities and method signatures.
@@ -117,9 +117,9 @@
 - [ ] Define `SessionRegistry` responsibilities and method signatures.
 
 ### 4.5 Cross-Cutting Contract Tasks
-- [ ] Define Dart typed request/response models checklist for all methods.
+- [x] Define Dart typed request/response models checklist for all methods.
 - [ ] Define stable field naming/versioning checklist for payload schemas.
-- [ ] Define error taxonomy checklist (`validation`, `io`, `process`, `workspace`, `bootstrap`, `permission`).
+- [x] Define error taxonomy checklist (`validation`, `io`, `process`, `workspace`, `bootstrap`, `permission`).
 - [ ] Define channel lifecycle checklist (subscribe/unsubscribe, plugin detach/reattach).
 - [ ] Define app-restart session resume behavior checklist.
 
